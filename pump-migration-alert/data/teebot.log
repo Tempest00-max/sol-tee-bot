@@ -1,0 +1,192 @@
+2026-05-19 18:19:53,661 | scanner    | INFO    | ==========================================================
+2026-05-19 18:19:53,661 | scanner    | INFO    | TEE-BOT v6 — Momentum-Only Edition
+2026-05-19 18:19:53,661 | scanner    | INFO    | ==========================================================
+2026-05-19 18:19:53,661 | scanner    | INFO    |   👀 Early    → 12%+ bonded
+2026-05-19 18:19:53,661 | scanner    | INFO    |   🔥 Momentum → 40%+ bonded
+2026-05-19 18:19:53,661 | scanner    | INFO    |   🚀 Imminent → 78%+ bonded
+2026-05-19 18:19:53,666 | scanner    | INFO    |   💰 Min MC   → $10,000
+2026-05-19 18:19:53,666 | scanner    | INFO    |   📈 Min Vel  → 0.5 SOL/min
+2026-05-19 18:19:53,666 | scanner    | INFO    |   🧠 Narrative min → 35/100
+2026-05-19 18:19:53,666 | scanner    | INFO    |   📊 Bonding prob min → 50/100
+2026-05-19 18:19:53,666 | scanner    | INFO    | ==========================================================
+2026-05-19 18:19:53,756 | scanner    | INFO    | Loaded 0 previously alerted tokens from database
+2026-05-19 18:19:54,319 | price      | INFO    | SOL price updated: $84.92
+2026-05-19 18:19:55,909 | scanner    | INFO    | Startup message sent to Telegram
+2026-05-19 18:19:55,909 | scanner    | INFO    | [18:19:55] Connecting to pumpportal.fun...
+2026-05-19 18:19:55,961 | asyncio    | ERROR   | Task exception was never retrieved
+future: <Task finished name='Task-6' coro=<cache_purge_loop() done, defined at C:\Users\HomePC\Documents\SOL TEE-BOT\pump-migration-alert\scanner.py:170> exception=TypeError('Event.wait() takes 1 positional argument but 2 were given')>
+Traceback (most recent call last):
+  File "C:\Users\HomePC\Documents\SOL TEE-BOT\pump-migration-alert\scanner.py", line 172, in cache_purge_loop
+    await _shutdown.wait(CACHE_PURGE_INTERVAL)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Event.wait() takes 1 positional argument but 2 were given
+2026-05-19 18:19:56,307 | price      | INFO    | SOL price updated: $84.93
+2026-05-19 18:19:56,895 | scanner    | INFO    | WebSocket live. Monitoring all launches + all trades.
+2026-05-19 18:21:14,338 | scanner    | INFO    | NEW SIGNAL: The last cigarette ($RETIRE) — imminent (88%) | MC: $16,278 | Velocity: 48.55 SOL/min
+2026-05-19 18:21:16,440 | scanner    | INFO    |   ✅ FIRST ALERT sent: Dn25pb4nuovDgWHg5ntx... (MC: $16,278, Narrative: 58, Bonding: 100%)
+2026-05-19 18:24:56,854 | price      | INFO    | SOL price updated: $84.84
+2026-05-19 18:29:57,416 | price      | INFO    | SOL price updated: $84.73
+2026-05-19 18:34:58,305 | price      | INFO    | SOL price updated: $84.56
+2026-05-19 18:39:59,676 | price      | INFO    | SOL price updated: $84.77
+2026-05-19 18:45:01,329 | price      | INFO    | SOL price updated: $84.67
+2026-05-19 18:47:05,528 | scanner    | INFO    | NEW SIGNAL: Purple Alien ($PA) — momentum (72%) | MC: $12,707 | Velocity: 39.51 SOL/min
+2026-05-19 18:47:08,880 | scanner    | INFO    |   ✅ FIRST ALERT sent: Gz9kna7XnMbDhK9itF7V... (MC: $12,707, Narrative: 58, Bonding: 95%)
+2026-05-19 18:50:02,005 | price      | INFO    | SOL price updated: $84.58
+2026-05-19 18:55:02,679 | price      | INFO    | SOL price updated: $84.60
+2026-05-19 19:00:03,284 | price      | INFO    | SOL price updated: $84.68
+2026-05-19 19:05:03,874 | price      | INFO    | SOL price updated: $84.66
+2026-05-19 19:08:24,719 | scanner    | INFO    | NEW SIGNAL: United Global Oil Supply ($UGOS) — imminent (81%) | MC: $14,575 | Velocity: 44.44 SOL/min
+2026-05-19 19:08:26,852 | scanner    | INFO    |   ✅ FIRST ALERT sent: 7i8p1iV3kKSDJ4GHXdpX... (MC: $14,575, Narrative: 58, Bonding: 98%)
+2026-05-19 19:10:04,443 | price      | INFO    | SOL price updated: $84.75
+2026-05-19 19:15:05,002 | price      | INFO    | SOL price updated: $84.73
+2026-05-19 19:20:05,646 | price      | INFO    | SOL price updated: $84.76
+2026-05-19 19:22:02,553 | scanner    | INFO    | NEW SIGNAL: United Global Oil Supply ($UGOS) — imminent (81%) | MC: $14,593 | Velocity: 44.44 SOL/min
+2026-05-19 19:22:05,237 | scanner    | INFO    |   ✅ FIRST ALERT sent: 9tgV5sKe6uhTqgpBZCg4... (MC: $14,593, Narrative: 58, Bonding: 98%)
+2026-05-19 19:25:06,334 | price      | INFO    | SOL price updated: $84.53
+2026-05-19 19:30:06,891 | price      | INFO    | SOL price updated: $84.37
+2026-05-19 19:35:07,461 | price      | INFO    | SOL price updated: $84.42
+2026-05-19 19:40:08,172 | price      | INFO    | SOL price updated: $84.45
+2026-05-19 19:45:08,977 | price      | INFO    | SOL price updated: $84.49
+2026-05-19 19:50:09,937 | price      | INFO    | SOL price updated: $84.50
+2026-05-19 19:55:10,514 | price      | INFO    | SOL price updated: $84.35
+2026-05-19 19:57:16,994 | scanner    | INFO    | NEW SIGNAL: Purple Farting Unicorn ($PFU) — imminent (90%) | MC: $16,513 | Velocity: 49.38 SOL/min
+2026-05-19 19:57:20,374 | scanner    | INFO    |   ✅ FIRST ALERT sent: JB4GMG1SPtJUnZC2pfFp... (MC: $16,513, Narrative: 58, Bonding: 100%)
+2026-05-19 20:00:11,755 | price      | INFO    | SOL price updated: $84.40
+2026-05-19 20:05:13,389 | price      | INFO    | SOL price updated: $84.44
+2026-05-19 20:07:28,603 | scanner    | INFO    | NEW SIGNAL: AREYOUNOTENTERTAINED ($AYNE) — imminent (100%) | MC: $33,939 | Velocity: 83.75 SOL/min
+2026-05-19 20:07:32,431 | scanner    | INFO    |   ✅ FIRST ALERT sent: CwZMKgig8oiVLQY6LTG9... (MC: $33,939, Narrative: 66, Bonding: 90%)
+2026-05-19 20:10:14,169 | price      | INFO    | SOL price updated: $84.61
+2026-05-19 20:15:14,832 | price      | INFO    | SOL price updated: $84.71
+2026-05-19 20:20:15,633 | price      | INFO    | SOL price updated: $84.55
+2026-05-19 20:25:16,561 | price      | INFO    | SOL price updated: $84.41
+2026-05-19 20:30:17,117 | price      | INFO    | SOL price updated: $84.30
+2026-05-19 20:34:53,667 | scanner    | INFO    | NEW SIGNAL: The Most Valuable Currency ($ATTENTION) — imminent (100%) | MC: $19,504 | Velocity: 56.30 SOL/min
+2026-05-19 20:34:56,844 | scanner    | INFO    |   ✅ FIRST ALERT sent: 9DVozM5bvUTDSRNAn1Wv... (MC: $19,504, Narrative: 50, Bonding: 90%)
+2026-05-19 20:35:01,916 | scanner    | WARNING | WebSocket closed. Reconnecting in 5s...
+2026-05-19 20:35:06,932 | scanner    | INFO    | [20:35:06] Connecting to pumpportal.fun...
+2026-05-19 20:35:08,832 | scanner    | INFO    | WebSocket live. Monitoring all launches + all trades.
+2026-05-19 20:35:17,895 | price      | INFO    | SOL price updated: $84.42
+2026-05-19 20:40:18,796 | price      | INFO    | SOL price updated: $84.40
+2026-05-19 20:45:17,174 | scanner    | INFO    | NEW SIGNAL: youngsavant ($youngsavant) — momentum (64%) | MC: $11,078 | Velocity: 35.00 SOL/min
+2026-05-19 20:45:19,420 | scanner    | INFO    |   ✅ FIRST ALERT sent: DCSU46tdpkQaPiQpn4av... (MC: $11,078, Narrative: 50, Bonding: 92%)
+2026-05-19 20:45:19,499 | price      | INFO    | SOL price updated: $84.49
+2026-05-19 20:46:13,908 | scanner    | INFO    | NEW SIGNAL: youngsavant ($youngsavant) — momentum (64%) | MC: $11,089 | Velocity: 35.00 SOL/min
+2026-05-19 20:46:16,483 | scanner    | INFO    |   ✅ FIRST ALERT sent: 5BS6u2XRTMkowWG69NGo... (MC: $11,089, Narrative: 50, Bonding: 92%)
+2026-05-19 20:47:07,256 | scanner    | INFO    | NEW SIGNAL: youngsavant ($youngsavant) — momentum (64%) | MC: $11,089 | Velocity: 35.00 SOL/min
+2026-05-19 20:47:11,026 | scanner    | INFO    |   ✅ FIRST ALERT sent: 5EnkJFXcFCtK6kNH32hZ... (MC: $11,089, Narrative: 50, Bonding: 92%)
+2026-05-19 20:47:25,761 | scanner    | INFO    | NEW SIGNAL: youngsavant ($youngsavant) — momentum (64%) | MC: $11,089 | Velocity: 35.00 SOL/min
+2026-05-19 20:47:29,132 | scanner    | INFO    |   ✅ FIRST ALERT sent: ChMXszioFvi4ieTSYasF... (MC: $11,089, Narrative: 50, Bonding: 92%)
+2026-05-19 20:50:20,344 | price      | INFO    | SOL price updated: $84.39
+2026-05-19 20:55:21,216 | price      | INFO    | SOL price updated: $84.30
+2026-05-19 20:58:04,757 | scanner    | WARNING | WebSocket closed. Reconnecting in 5s...
+2026-05-20 08:04:22,039 | scanner    | INFO    | [08:04:22] Connecting to pumpportal.fun...
+2026-05-20 08:04:22,216 | price      | WARNING | Price fetch failed: Cannot connect to host api.binance.com:443 ssl:default [getaddrinfo failed]
+2026-05-20 08:04:22,292 | scanner    | ERROR   | WS error: [Errno 11001] getaddrinfo failed
+Traceback (most recent call last):
+  File "C:\Users\HomePC\Documents\SOL TEE-BOT\pump-migration-alert\scanner.py", line 356, in main
+    async with websockets.connect(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HomePC\AppData\Local\Programs\Python\Python312\Lib\site-packages\websockets\asyncio\client.py", line 590, in __aenter__
+    return await self
+           ^^^^^^^^^^
+  File "C:\Users\HomePC\AppData\Local\Programs\Python\Python312\Lib\site-packages\websockets\asyncio\client.py", line 544, in __await_impl__
+    self.connection = await self.create_connection()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HomePC\AppData\Local\Programs\Python\Python312\Lib\site-packages\websockets\asyncio\client.py", line 470, in create_connection
+    _, connection = await loop.create_connection(factory, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HomePC\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 1083, in create_connection
+    infos = await self._ensure_resolved(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HomePC\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 1466, in _ensure_resolved
+    return await loop.getaddrinfo(host, port, family=family, type=type,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HomePC\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 905, in getaddrinfo
+    return await self.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HomePC\AppData\Local\Programs\Python\Python312\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HomePC\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 978, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+2026-05-20 08:04:23,437 | scanner    | INFO    | Reconnecting in 5 seconds...
+2026-05-20 08:04:28,750 | scanner    | INFO    | [08:04:28] Connecting to pumpportal.fun...
+2026-05-20 08:04:28,921 | scanner    | ERROR   | WS error: [Errno 11001] getaddrinfo failed
+Traceback (most recent call last):
+  File "C:\Users\HomePC\Documents\SOL TEE-BOT\pump-migration-alert\scanner.py", line 356, in main
+    async with websockets.connect(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HomePC\AppData\Local\Programs\Python\Python312\Lib\site-packages\websockets\asyncio\client.py", line 590, in __aenter__
+    return await self
+           ^^^^^^^^^^
+  File "C:\Users\HomePC\AppData\Local\Programs\Python\Python312\Lib\site-packages\websockets\asyncio\client.py", line 544, in __await_impl__
+    self.connection = await self.create_connection()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HomePC\AppData\Local\Programs\Python\Python312\Lib\site-packages\websockets\asyncio\client.py", line 470, in create_connection
+    _, connection = await loop.create_connection(factory, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HomePC\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 1083, in create_connection
+    infos = await self._ensure_resolved(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HomePC\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 1466, in _ensure_resolved
+    return await loop.getaddrinfo(host, port, family=family, type=type,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HomePC\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 905, in getaddrinfo
+    return await self.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HomePC\AppData\Local\Programs\Python\Python312\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HomePC\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 978, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+2026-05-20 08:04:28,934 | scanner    | INFO    | Reconnecting in 5 seconds...
+2026-05-20 08:04:33,964 | scanner    | INFO    | [08:04:33] Connecting to pumpportal.fun...
+2026-05-20 08:04:35,299 | scanner    | INFO    | WebSocket live. Monitoring all launches + all trades.
+2026-05-20 08:08:48,202 | scanner    | WARNING | WebSocket closed. Reconnecting in 5s...
+2026-05-20 08:08:53,253 | scanner    | INFO    | [08:08:53] Connecting to pumpportal.fun...
+2026-05-20 08:08:58,853 | scanner    | ERROR   | WS error: [WinError 1236] The network connection was aborted by the local system
+Traceback (most recent call last):
+  File "C:\Users\HomePC\Documents\SOL TEE-BOT\pump-migration-alert\scanner.py", line 356, in main
+    async with websockets.connect(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HomePC\AppData\Local\Programs\Python\Python312\Lib\site-packages\websockets\asyncio\client.py", line 590, in __aenter__
+    return await self
+           ^^^^^^^^^^
+  File "C:\Users\HomePC\AppData\Local\Programs\Python\Python312\Lib\site-packages\websockets\asyncio\client.py", line 544, in __await_impl__
+    self.connection = await self.create_connection()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HomePC\AppData\Local\Programs\Python\Python312\Lib\site-packages\websockets\asyncio\client.py", line 470, in create_connection
+    _, connection = await loop.create_connection(factory, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HomePC\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 1132, in create_connection
+    raise exceptions[0]
+  File "C:\Users\HomePC\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 1107, in create_connection
+    sock = await self._connect_sock(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HomePC\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 1010, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "C:\Users\HomePC\AppData\Local\Programs\Python\Python312\Lib\asyncio\proactor_events.py", line 729, in sock_connect
+    return await self._proactor.connect(sock, address)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HomePC\AppData\Local\Programs\Python\Python312\Lib\asyncio\windows_events.py", line 803, in _poll
+    value = callback(transferred, key, ov)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HomePC\AppData\Local\Programs\Python\Python312\Lib\asyncio\windows_events.py", line 599, in finish_connect
+    ov.getresult()
+ConnectionAbortedError: [WinError 1236] The network connection was aborted by the local system
+2026-05-20 08:08:59,262 | scanner    | INFO    | Reconnecting in 5 seconds...
+2026-05-20 08:09:04,506 | scanner    | INFO    | [08:09:04] Connecting to pumpportal.fun...
+2026-05-20 08:09:05,958 | scanner    | INFO    | WebSocket live. Monitoring all launches + all trades.
+2026-05-20 08:09:32,851 | price      | WARNING | Price fetch failed: 
+2026-05-20 08:14:43,848 | price      | WARNING | Price fetch failed: 
+2026-05-20 08:19:54,856 | price      | WARNING | Price fetch failed: 
+2026-05-20 08:24:28,323 | scanner    | WARNING | WebSocket closed. Reconnecting in 5s...
+2026-05-20 08:24:33,413 | scanner    | INFO    | [08:24:33] Connecting to pumpportal.fun...
+2026-05-20 08:24:42,733 | scanner    | INFO    | WebSocket live. Monitoring all launches + all trades.
+2026-05-20 08:25:05,830 | price      | WARNING | Price fetch failed: 
+2026-05-20 08:26:26,547 | scanner    | INFO    | NEW SIGNAL: SAOS ($SAOS) — momentum (68%) | MC: $11,943 | Velocity: 37.53 SOL/min
+2026-05-20 08:26:31,985 | scanner    | INFO    |   ✅ FIRST ALERT sent: EK76hgoow6abZGxzfdxe... (MC: $11,943, Narrative: 58, Bonding: 83%)
