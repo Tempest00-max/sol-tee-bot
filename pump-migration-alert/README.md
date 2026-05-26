@@ -1,107 +1,37 @@
 # TEE-BOT — Pump.fun Migration Alert System
 
-Real-time monitoring of Pump.fun bonding curves. Sends Telegram alerts when tokens hit 85% bonded — minutes before Raydium migration.
+Real-time monitoring of Pump.fun bonding curves with async Python, 
+SQLite persistence, and Telegram alerting.
 
-## What it does
+## Architecture
 
-- Scans Pump.fun every 30 seconds for tokens approaching graduation
-- Checks contract renouncement, whale concentration, and dev wallet history
-- Sends instant Telegram alert with safety data + direct links
-- Deduplicates via SQLite — no repeat alerts
+- **scanner.py** — Async event loop scanning Pump.fun API every 30s
+- **bonding_curve.py** — Bonding curve math and migration probability
+- **filter.py** — On-chain safety validation (renouncement, whale checks)
+- **alert.py** — Telegram message builder with deduplication
+- **config.py** — Environment configuration (gitignored, see config.example.py)
 
-## Setup (15 minutes)
+## Tech Stack
 
-### 1. Get a free Helius API key
-Go to [helius.dev](https://helius.dev) → Sign up → Copy your API key
+- Python 3.11 + asyncio + aiohttp
+- Helius RPC for Solana blockchain data
+- SQLite for token deduplication
+- Telegram Bot API for alerts
 
-### 2. Create a Telegram bot
-- Message [@BotFather](https://t.me/BotFather) on Telegram
-- Send `/newbot` → follow prompts → copy the token
-- Message [@userinfobot](https://t.me/userinfobot) → copy your ID
+## Key Design Decisions
 
-### 3. Install and run
+- **Async architecture** — Single event loop handles scanning, filtering, 
+  and alerting without blocking
+- **SQLite deduplication** — Prevents alert spam via persistent state
+- **Modular safety checks** — Renouncement, whale concentration, and dev 
+  wallet history evaluated independently
+- **Configurable thresholds** — Market cap, velocity, and bonding progress 
+  tunable per deployment
+
+## Setup
 
 ```bash
-# On Termux (Android) or any Python 3.8+ environment
-pip install aiohttp
-
-# Edit config.py with your keys
-nano config.py
-
-# Run
+pip install -r requirements.txt
+cp config.example.py config.py
+# Edit config.py with your API keys
 python scanner.py
-```
-
-### Keep running on Android (Termux)
-
-```bash
-termux-wake-lock
-nohup python scanner.py > scanner.log 2>&1 &
-```
-
-### Deploy free on Render.com
-
-1. Push this folder to GitHub
-2. Connect at [render.com](https://render.com)
-3. New Web Service → connect repo → Start command: `python scanner.py`
-
-## File structure
-
-```
-pump-migration-alert/
-├── scanner.py          Main loop — run this
-├── bonding_curve.py    Pump.fun API + migration math
-├── filter.py           On-chain safety checks
-├── alert.py            Telegram message builder
-├── config.py           Your API keys and thresholds
-├── requirements.txt    One dependency: aiohttp
-└── data/
-    └── seen_tokens.db  Auto-created SQLite database
-```
-
-## Tech stack
-
-- Python 3.8+
-- aiohttp (async HTTP)
-- Helius RPC (free tier)
-- Pump.fun public API
-- SQLite (no server needed)
-- Telegram Bot API
-
-## Alert example
-
-```
-🟢 MIGRATION ALERT — entering zone
-
-DOGE2 ($DOGE2)
-
-Bonding progress:
-[████████░░] 83%
-
-Market cap:  $57,400
-24h volume:  $312,000
-Est. to graduation: ~8 min
-
-Safety checks:
-• Mint renounced:       ✅
-• No whale concentration: ✅
-• Dev wallet history:   ✅
-
-Contract: AbCdEfGhIjKlMnOpQr...
-pump.fun | Solscan | Birdeye
-```
-
-## Custom builds
-
-I build custom versions with:
-- Auto-buy on migration signal
-- Smart wallet overlay (alerts when known profitable wallets buy)
-- Discord / webhook alerts
-- Multi-channel support
-- Private hosted instances
-
-DM on Twitter: [@joe_richma49107]
-
-## License
-
-MIT
